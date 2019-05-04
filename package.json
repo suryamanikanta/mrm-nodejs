@@ -1,0 +1,26 @@
+{
+  "name": "get-conf-rum-details",
+  "author": "desra04",
+  "version": "1.0.0",
+  "description": " ",
+  "private": true,
+  "keywords": [],
+  "repository": " ",
+  "license": "ISC",
+  "contributors": [],
+  "scripts": {
+    "test": "nyc --reporter=text --reporter=text-summary --reporter=html mocha *spec.js     --timeout 10000",
+    "test:int": "mocha *spec_api.js --timeout 20000"
+  },
+  "devDependencies": {
+    "nyc": "^10.2.0",
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0",
+    "lambda-tester": "^2.6.1",
+    "sync-request": "^4.0.1"
+  },
+  "dependencies": {
+    "shuffle-array": "^1.0.1",
+    "uuid": "^3.0.1"
+  }
+}
