@@ -6,7 +6,7 @@ const my_booking_service = require('./services/my_bookings_service')
 
 function handler(event, context, callback) {
     if (!event) {
-        return callback(null, "empty request");
+        return callback(null, "empty request message");
     }
     console.log('path : ' + event.path);
     switch (event.path) {
